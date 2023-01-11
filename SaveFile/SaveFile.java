@@ -3,7 +3,7 @@ package ;
 import java.io.FileOutputStream;
 import org.springframework.web.multipart.MultipartFile;
 
-public class SaveFile {
+public class SaveFile {								//관리자테이블에도 저장시 2개 다 사용
 	public static void saveFile(MultipartFile mf, String admindir, String custdir) {
 		byte [] data;
 		String imgname = mf.getOriginalFilename();
